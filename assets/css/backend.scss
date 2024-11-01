@@ -1,0 +1,105 @@
+$rojo: #BE1E2C;
+$rojo2: #f13f4b;
+.container{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px auto;
+}
+#wpcontent {
+  background-color: #FFFFFF;
+  padding-left: 0px;
+
+  #wpbody {
+    padding-left: 20px;
+    background-color: #fbfbfd;
+  }
+}
+h1.title-sob{
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.sob-admin-container{
+  margin-top: 15px;
+}
+.header-settings-page-custom{
+  background-color: $rojo2;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0px 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    li{
+      a{
+        font-size: 15px;
+        color: #ffffff;
+        text-decoration: none;
+        &:hover{
+          color:#FFFFFF;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+form{
+  box-sizing: border-box;
+  background: #fff;
+  padding: 15px 20px;
+  border-color: #eaeaea;
+  border-radius: 0px 0px 10px 10px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  box-shadow: 1px 10px 20px 5px #eaeaea;
+  p.submit{
+    input{
+      background-color: $rojo2 !important;
+      border:0px !important;
+      outline: 1px solid transparent !important;
+      padding: 10px 20px !important;
+      font-size: 17px !important;
+      font-weight: 600 !important;
+      transition: all .3s !important;
+      &:hover{
+        transform: scale(1.04);
+        transform: translate(-5px,-7px);
+        box-shadow: 10px 10px 10px $rojo;
+      }
+      &:focus,&:active,&:visited{
+        outline: 1px solid transparent;
+        box-shadow:none;
+      }
+    }
+  }
+}
+
+.form-table {
+  label{
+    font-size:15px;
+  }
+  input, textarea {
+    padding:10px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 370px;
+    border: 1px solid #cdcdcd;
+  }
+  select{
+    padding:10px 10px 10px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 370px;
+    border: 1px solid #cdcdcd;
+
+  }
+}
+.form-table th{
+  min-width: 300px !important;
+  vertical-align: middle;
+}
